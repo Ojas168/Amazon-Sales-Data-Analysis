@@ -1,147 +1,62 @@
-📊 Amazon Sales Data Analysis & Visualization
-🔎 Project Overview
+ # 📊 Amazon Sales Data Analysis & Visualization
 
-This project performs an end-to-end Data Analysis and Visualization workflow on an Amazon product sales dataset to uncover insights about pricing strategies, product popularity, customer satisfaction, and marketplace trends.
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-orange)
+![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-yellow)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-green)
+![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Plots-purple)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-red)
+![Status](https://img.shields.io/badge/Project-Completed-success)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-The goal was not just visualization, but transforming raw marketplace data into actionable business insights using industry-standard analytics practices.
+## 🚀 Overview
 
-🎯 Objectives
+An end-to-end Data Analytics & Visualization project analyzing Amazon product data to understand pricing patterns, discounts, popularity trends, and customer satisfaction.
 
-Clean and preprocess real-world e-commerce data
+The project follows an industry-style analytics workflow — transforming raw data into actionable business insights.
 
-Perform Exploratory Data Analysis (EDA)
+## 🔍 Key Insights
 
-Build meaningful visualizations
+📦 Electronics dominate marketplace listings
 
-Analyze correlations between pricing, discounts, and ratings
+💰 Prices show strong right-skew (budget-heavy marketplace)
 
-Extract business insights through data storytelling
+🏷️ Discounts have minimal impact on ratings
 
-Present findings in a portfolio-ready analytical format
+⭐ Popularity ≠ product quality
 
-🧠 Analytics Pipeline
-1️⃣ Data Understanding
+📊 Discounting preserves pricing hierarchy
 
-Inspected dataset structure using info() and describe()
+## ⚙️ Analytics Pipeline
 
-Identified datatype inconsistencies and missing values
+𝐃𝐚𝐭𝐚 𝐂𝐥𝐞𝐚𝐧𝐢𝐧𝐠 → 𝐄𝐃𝐀 → 𝐕𝐢𝐬𝐮𝐚𝐥𝐢𝐳𝐚𝐭𝐢𝐨𝐧 → 𝐂𝐨𝐫𝐫𝐞𝐥𝐚𝐭𝐢𝐨𝐧 𝐀𝐧𝐚𝐥𝐲𝐬𝐢𝐬 → 𝐈𝐧𝐬𝐢𝐠𝐡𝐭 𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐢𝐨𝐧 → 𝐃𝐚𝐭𝐚 𝐒𝐭𝐨𝐫𝐲𝐭𝐞𝐥𝐥𝐢𝐧𝐠
 
-Validated column distributions before analysis
+## 🛠️ Tech Stack
 
-2️⃣ Data Cleaning & Preprocessing
+𝐏𝐲𝐭𝐡𝐨𝐧 • 𝐏𝐚𝐧𝐝𝐚𝐬 • 𝐍𝐮𝐦𝐏𝐲 • 𝐌𝐚𝐭𝐩𝐥𝐨𝐭𝐥𝐢𝐛 • 𝐒𝐞𝐚𝐛𝐨𝐫𝐧 • 𝐉𝐮𝐩𝐲𝐭𝐞𝐫
 
-Key transformations:
+## 📊 Project Preview
 
-Removed currency symbols (₹) and commas from price columns
+(Add screenshots of your best charts inside a /visuals folder)
 
-Converted object columns into numeric formats
+Category Distribution
+/visuals/category_distribution.png
+Price Distribution
+/visuals/price_distribution.png
+Correlation Analysis
+/visuals/correlation_heatmap.png
 
-Handled invalid values using coercion
+👉 After uploading images, replace paths like this:
 
-Addressed missing data issues
+![Category Distribution](visuals/category_distribution.png)
 
-df['actual_price'] = pd.to_numeric(
-    df['actual_price'].astype(str)
-    .str.replace('[₹,]', '', regex=True),
-    errors='coerce'
-)
-3️⃣ Exploratory Data Analysis (EDA)
+GitHub will automatically render previews.
 
-Performed structured diagnostics:
+## 📈 Skills Demonstrated
 
-Null value analysis
+Data Cleaning & Preprocessing
 
-Distribution inspection
-
-Category frequency analysis
-
-Statistical summaries
-
-4️⃣ Data Visualization
-
-Built visualizations using:
-
-Matplotlib
-
-Seaborn
-
-Visuals included:
-
-Category distribution bar charts
-
-Price distribution histograms
-
-Correlation heatmaps
-
-Scatter plots (ratings vs discounts)
-
-Log-scaled popularity analysis
-
-5️⃣ Correlation Analysis
-Relationship	Pearson r	Insight
-Discount % vs Rating	-0.15	Discounts don’t influence satisfaction
-Rating Count vs Rating	0.10	Popularity ≠ Quality
-Actual vs Discounted Price	0.96	Pricing tiers preserved
-📈 Key Insights
-🛒 Marketplace Structure
-
-Electronics dominate listings, indicating strong demand concentration in technology-related categories.
-
-💰 Pricing Behavior
-
-Price distribution is right-skewed, suggesting a marketplace focused on budget-to-mid-range consumers.
-
-🏷️ Discount Strategy
-
-Discounts do not significantly impact customer ratings, implying satisfaction depends on product experience rather than price reductions.
-
-⭐ Popularity vs Quality
-
-High review counts do not guarantee better ratings, highlighting the role of visibility and demand.
-
-📊 Stable Pricing Hierarchy
-
-Discounts are applied proportionally, maintaining relative product pricing positions.
-
-🧩 Data Storytelling Conclusion
-
-The Amazon marketplace reflects a demand-driven ecosystem where:
-
-affordability drives volume,
-
-discounts influence purchases but not satisfaction,
-
-and popularity is shaped more by exposure than product quality alone.
-
-🛠️ Tech Stack
-
-Python
-
-Pandas
-
-NumPy
-
-Matplotlib
-
-Seaborn
-
-Jupyter Notebook
-
-📁 Project Structure
-amazon-sales-analysis/
-│
-├── data/
-│   └── amazon.csv
-├── notebooks/
-│   └── analysis.ipynb
-├── visuals/
-│   └── charts & plots
-└── README.md
-🚀 Skills Demonstrated
-
-Data Cleaning & Wrangling
-
-Exploratory Data Analysis
+Exploratory Data Analysis (EDA)
 
 Statistical Interpretation
 
@@ -151,19 +66,17 @@ Insight Extraction
 
 Data Storytelling
 
-Business Analytics Thinking
+## 📂 Repository Structure
 
-📌 Future Improvements
+amazon-sales-analysis/
+│
+├── amazon.csv
+├── analysis.ipynb
+├── visuals/
+└── README.md
 
-Interactive dashboard (Streamlit/Tableau)
+## 👤 Author
 
-Time-series sales analysis
+𝐎𝐣𝐚𝐬 𝐕𝐢𝐬𝐡𝐰𝐚 𝐌𝐨𝐡𝐚𝐧
 
-Predictive rating modeling
-
-Category-level profitability analysis
-
-👤 Author
-
-Ojas Vishwa Mohan
-Aspiring Data Scientist | Python & Data Analytics Projects
+Aspiring Data Scientist | Building Python & Analytics Projects
