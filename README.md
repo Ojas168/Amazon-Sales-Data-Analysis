@@ -40,8 +40,8 @@ The project follows an industry-style analytics workflow — transforming raw da
 👉 After uploading images, replace paths like this:
 
 ![Category Distribution](visuals/category_distribution.png)
-![Price_Distribution].(visuals/price_distribution.png)
-![Correlation_Heatmap].(visuals/correlation_heatmap.png)
+![Price_Distribution](visuals/price_distribution.png)
+![Correlation_Heatmap](visuals/correlation_heatmap.png)
 
 GitHub will automatically render previews.
 
