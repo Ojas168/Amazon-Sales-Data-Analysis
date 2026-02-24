@@ -43,8 +43,6 @@ The project follows an industry-style analytics workflow — transforming raw da
 ![Price_Distribution](visuals/price_distribution.png)
 ![Correlation_Heatmap](visuals/correlation_heatmap.png)
 
-GitHub will automatically render previews.
-
 ## 📈 Skills Demonstrated
 
 Data Cleaning & Preprocessing
