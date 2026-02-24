@@ -37,8 +37,6 @@ The project follows an industry-style analytics workflow — transforming raw da
 
 ## 📊 Project Preview
 
-👉 After uploading images, replace paths like this:
-
 ![Category Distribution](visuals/category_distribution.png)
 ![Price_Distribution](visuals/price_distribution.png)
 ![Correlation_Heatmap](visuals/correlation_heatmap.png)
@@ -60,11 +58,17 @@ Data Storytelling
 ## 📂 Repository Structure
 
 amazon-sales-analysis/
+
 │
+
 ├── amazon.csv
+
 ├── analysis.ipynb
+
 ├── visuals/
+
 └── README.md
+
 
 ## 👤 Author
 
